@@ -1,0 +1,23 @@
+Code for Q1
+Check what is left unread in the cin buffer: 
+Nr. characters left unred in cin buffer: 0
+
+Code for Q2 and Q3
+
+Code for Q4
+
+Code for Q5
+
+Code for Q6
+	Enter the value 10
+	Enter an int 	Correct 10
+ 
+	Enter the value 4.5
+	Enter an int 	Incorrect 4.5
+ 
+	Enter the value abc
+	Enter an int 	Incorrect abc
+ 
+	Enter the value a
+	Enter an int 	Incorrect a
+ 
