@@ -1,1 +1,21 @@
 Add your steps (pseudo-code) for the dice game here.
+Display the welcome page
+Ask to start the game
+
+While the game is going
+    pick two random numbers between 1 and 6 and output the sum
+
+    if the sum is 7 or 11 then output win_screen and ask if they want to play again
+
+    else if the sum is 2 0r 3 or 12 then output the lose_screen and ask if they want to play again
+
+    else make player_point = to the sum and ask player to roll again
+
+    if the player point is greater than 0
+    
+    then let player roll again 
+    
+    if sum is equal to player point or 7 output win_screen and ask if they want to play again
+
+    else let player roll again
+
