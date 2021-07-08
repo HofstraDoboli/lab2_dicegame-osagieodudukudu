@@ -1,1 +1,73 @@
 Add your steps (pseudo-code) for the dice game here.
+
+Display the welcome page
+
+While the game is going
+
+    pick two random numbers between 1 to 6 
+
+    output the sum
+
+    if the sum is 7 or 11 then output win_screen and ask if they want to play again
+
+    else if the sum is 2 or 3 or 12 then output the lose_screen and ask if they want to play again
+
+    else make player_point = to the sum and ask player to roll again
+
+    while win not lose
+        
+        pick two random numbers between 1 to 6 
+
+        output the sum
+
+        if sum equals player_point then win_screen and ask to play again
+
+        else if sum equals 7 then output the lose_screen and ask if they want to play again
+
+        else keep playing
+
+Sample Run: Testing pseudo code
+
+WELCOME TO THE DICE GAME!
+
+5 3
+
+8
+
+//no win_screen
+//no lose_screen
+
+player_point = 8
+
+//player is looping with dice
+//loop 1
+
+2 2
+
+4
+
+//4 is not equal to player_point
+//4 is not 7
+// no lose_screen
+//loop 2
+
+4 4
+
+8
+
+//8 is equal to player_point
+//player win_screen
+//do you want to continue
+
+n
+
+//ADDITIONAL NOTES FOR ME
+
+parameter and function and return value and calling function and called function and definition and declaration
+
+int totalallnumbers(int noe, int array[])
+    {
+        int returnvalue;
+
+        return returnvalue;
+    }

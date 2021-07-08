@@ -23,33 +23,43 @@ int main()
     */
     // time(NULL) function that returns the current time its code is in <ctime> library
     // read more about srand at http://www.cplusplus.com/reference/cstdlib/srand/?kw=srand
-    srand ( time(NULL) ); // assigns the current time to the seed 
+    srand(time(NULL)); // assigns the current time to the seed 
 
     cout << "RAND_MAX value is " << RAND_MAX << endl;
                             
     for (int i = 0; i < 10; i ++)
         cout << rand() << '\t';
     cout << "\nQ1: What is the output of rand(). Why? " << endl;
-    answer = "" ; // 1. Write your answer to Q1 in between " "
-    cout << "Answer Q1: " << answer << endl;
+    answer = "rand() outputs random numbers between 0 and RAND_MAX. Right now RAND_MAX is 2147483647, so it will generate a random number between 0 and 2147483647. If the RAND_MAX changes, so will the random numbers. That's because RAND_MAX is the highest it can go." ; // 1. Write your answer to Q1 in between " "
+    cout << "Answer Q1:" << answer << endl;
 
     cout << endl;
     for (int i = 0; i < 10; i ++)
         cout << rand()%5 << '\t';
     cout << "\nQ2: What is the output of rand()%5. Why? " << endl;
-    answer = "" ; // 2. Write your answer to Q2 in between " "
-    cout << "Answer Q2: " << answer << endl;
+    answer = "We are using modulo operator. It collects remainders after divisio. That's why all random numbers are between 0 and 4. It's because they being divided by 5. If we change 5 to 10, all the number will be from 0 to 9." ; // 2. Write your answer to Q2 in between " "
+    cout << "Answer Q2:" << answer << endl;
 
     cout << endl;
     for (int i = 0; i < 10; i ++)
         cout << rand()%5+3 << '\t';
     cout << "\nQ3: What is the output of rand()%5+3. Why?" << endl;
-    answer = "" ; // 3. Write your answer to Q3 in between " "
+    answer = "This output is like question 2. It's just adding 3 to every number, otherwise it's just like question 2. It's like adding a constant." ; // 3. Write your answer to Q3 in between " "
     cout << "Answer Q3: " << answer << endl;
 
     // Comment the line srand(time(NULL)); compile and run the program twice
+    
+    // w/srand 1818898520      2117113952      1439941803      437454447       1154865228      467964741       814300271       313018070       1776253873      849202498
+
+    // w/srand 850001994       2034696117      573437877       1962858042      1575705105      2042671857      1122295657      1026061973      52901989        1864136006
+
+    // w/srand 550127542       798824236       1243467083      1428483536      1474800820      1513011612      647292286       510490855       115521756       293658696
+
+    // wo/ srand 1804289383      846930886       1681692777      1714636915      1957747793      424238335       719885386       1649760492      596516649       1189641421
+
+    // wo/srand 1804289383      846930886       1681692777      1714636915      1957747793      424238335       719885386       1649760492      596516649       1189641421
     cout << "\nQ4: What is the output of the program when srand(time(NULL)) is removed. Why" << endl;
-    answer = "" ; // 4. Write your answer to Q4 in between " "
+    answer = "In the above comments, I have 5 outputs. When is srand is commented out, the numbers never change. That means the numbers are no longer random, making the rand function meaningless. When srand is used, it make a brand new seed everytime, hence making new random numbers everytime. So when I need random numbers I should use srand. If I don't use it, the numbers won't be random. " ; // 4. Write your answer to Q4 in between " "
     cout << "Answer Q4: " << answer << endl;
 
     // 5. Change the rand() expression below to generate a random number 
@@ -58,7 +68,7 @@ int main()
     bool is_error = false; 
     for (int i = 0; i < 50; i ++)
     {
-        int dice_output = rand(); //change this expression so dice_output has a value between 1 and 6
+        int dice_output = rand()%6+1; //change this expression so dice_output has a value between 1 and 6
         if (dice_output < 1 || dice_output > 6)
         {
             cout << "Error: your code does not generate # between 1 and 6" << endl;
