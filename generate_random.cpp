@@ -59,7 +59,7 @@ int main()
 
     // wo/srand 1804289383      846930886       1681692777      1714636915      1957747793      424238335       719885386       1649760492      596516649       1189641421
     cout << "\nQ4: What is the output of the program when srand(time(NULL)) is removed. Why" << endl;
-    answer = "In the above comments, I have 5 outputs. When is srand is commented out, the numbers never change. That means the numbers are no longer random, making the rand function meaningless. When srand is used, it make a brand new seed everytime, hence making new random numbers everytime. So when I need random numbers I should use srand. If I don't use it, the numbers won't be random." ; // 4. Write your answer to Q4 in between " "
+    answer = "In the above comments, I have 5 outputs. When is srand is commented out, the numbers never change. That means the numbers are no longer random, making the rand function meaningless. When srand is used, it make a brand new seed everytime, hence making new random numbers everytime. So when I need random numbers I should use srand. If I don't use it, the numbers won't be random. " ; // 4. Write your answer to Q4 in between " "
     cout << "Answer Q4: " << answer << endl;
 
     // 5. Change the rand() expression below to generate a random number 
