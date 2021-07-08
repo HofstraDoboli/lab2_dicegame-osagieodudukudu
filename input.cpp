@@ -17,7 +17,7 @@ int main()
     array_values.push_back("10");   // add "10" 
     array_values.push_back("4.5");  // add "4.5"
     array_values.push_back("abc"); 
-    array_values.push_back("a");
+    array_values.push_back("a"); 
 
     int val;  // declare an integer variable int
 
