@@ -24,6 +24,8 @@ While the game is going
 
         else if sum equals 7 then output the lose_screen and ask if they want to play again
 
+        else keep playing
+
 Sample Run: Testing pseudo code
 
 WELCOME TO THE DICE GAME!
@@ -59,4 +61,13 @@ player_point = 8
 
 n
 
+//ADDITIONAL NOTES FOR ME
 
+parameter and function and return value and calling function and called function and definition and declaration
+
+int totalallnumbers(int noe, int array[])
+    {
+        int returnvalue;
+
+        return returnvalue;
+    }
