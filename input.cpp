@@ -22,7 +22,7 @@ int main()
     int val;  // declare an integer variable int
 
     cout << "Code for Q1" << endl;
-    /*for (int i = 0; i < array_values.size(); i++)
+    for (int i = 0; i < array_values.size(); i++)
     {
         cout << "\tEnter the value " << array_values.at(i) << endl;
     
@@ -32,7 +32,7 @@ int main()
         cout << "\n\tCheck fail flag in cin " <<  cin.fail() << endl;
         cout << "\tYou entered " << val << endl << endl;
     }
-    */
+    
     // cin = is a stream object that takes characters from the keyboard and extracts data according 
     //       to the type of the variable in your program.
     //      = If it cannot extract the type specified in your program (in our case an integer), it might leave
@@ -54,7 +54,7 @@ int main()
 
     cout << "\nCode for Q2 and Q3" << endl;
     ///uncomment when you get to Q2 and Q3
-    /*
+    
     for (int i = 0; i < array_values.size(); i++)
     {
         cout << "\tEnter the value " << array_values.at(i) << endl;
@@ -77,7 +77,7 @@ int main()
         
         cout << "\tYou entered " << val << endl << endl;
     }  
-    */
+    
     output_file << "\nQ2: (cin + fail+ignore) What happens when you run the code above? Explain why." << endl;
     answer = "The same thing as the first code, but this time it allows the user to input for 'abc' and 'a'. This code was created to ignore the leftovers which is why The user is allowed to input for all of them. "; // enter your answer in between ""
     output_file << "Answer Q2: " << answer << endl;
@@ -88,19 +88,19 @@ int main()
 
     cout << "\nCode for Q4" << endl;
     // uncomment when you get to Q4
-    /*
-    for (int i = 0; i < array_values.size(); i++)
-    {
-        cout << "\tEnter the value " << array_values.at(i) << endl;
-        cout << "\tEnter an int "; 
-        string s;
-        getline(cin,s);     // read a line of input from the cin buffer - 
-                            // up to and including '\n'
-        val = stoi(s);  // stoi = converts a string into an integer 
-                            // read more at http://www.cplusplus.com/reference/string/stoi/?kw=stoi
-        cout << "\tYou entered " << val << endl << endl;
-    }  
-    */
+    
+    // for (int i = 0; i < array_values.size(); i++)
+    // {
+    //     cout << "\tEnter the value " << array_values.at(i) << endl;
+    //     cout << "\tEnter an int "; 
+    //     string s;
+    //     getline(cin,s);     // read a line of input from the cin buffer - 
+    //                         // up to and including '\n'
+    //     val = stoi(s);  // stoi = converts a string into an integer 
+    //                         // read more at http://www.cplusplus.com/reference/string/stoi/?kw=stoi
+    //     cout << "\tYou entered " << val << endl << endl;
+    // }  
+    
     output_file << "\nQ4: (getline only) What happens when you run the code above? Explain why." << endl;
     answer = "The loop runs until the user inputs 'abc' which terminates the loop. This is because 'abc' cannot be converted into an integer."; // enter your answer in between ""
     output_file << "Answer Q4: " << answer << endl;
@@ -108,7 +108,7 @@ int main()
     // Comment the for loop for Q4 above - leave the answer to Q4
     
     cout << "\nCode for Q5" << endl;
-    /*for (int i = 0; i < array_values.size(); i++)
+    for (int i = 0; i < array_values.size(); i++)
     {
         cout << "\tEnter the value " << array_values.at(i) << endl;
         cout << "\tEnter an int "; 
@@ -124,9 +124,9 @@ int main()
         }
         cout << "\tYou entered " << val << endl << endl;
     }
-    */
+    
     output_file << "\nQ5: (getline+stoi) What happens when you run the code above? Explain why." << endl;
-    answer = "It runs like the last one, but this time the termination doesn't happen. This is because the try catch function ignores the invalid argument."; // enter your answer in between ""
+    answer = "It runs like the last one, but this time the termination doesn't happen. The exception is caught in the catch block. This is very useful to manage unexpected outputs that could crash the program."; // enter your answer in between ""
     output_file << "Answer Q5: " << answer << endl;
 
     //6. Q6 Add code to enter integer values from the keyboard correctly = accept only 10, not 4.5, abc or a
