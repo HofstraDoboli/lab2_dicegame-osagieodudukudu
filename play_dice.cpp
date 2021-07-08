@@ -13,6 +13,32 @@ int main()
 					// each time you run your program
 
     // Add your code to play the dice game here
+    int x;
+
+    int roll();
+    {
+        int roll = rand()%6+1;
+        return roll;
+    }
+
+    int game();
+    {
+        cout << "Do you want to play the dice game?" << endl;
+        cin >> x;
+
+        if (x == 'Y' || x == 'y')
+        {
+            int num_1 = roll();
+            int num_2 = roll();
+            int sum = num_1+num_2;
+
+            if (sum == 7 || sum == 11)
+            {
+                
+            }
+        }
+
+    }
 
 }
 
